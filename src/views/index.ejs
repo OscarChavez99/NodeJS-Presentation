@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <%- include('./partials/head.ejs') %>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.css">
+    <title> <%= title %> </title>
+</head>
+<body>
+    <!-- el '-' antes de include se usa para utilizar código -->
+    <%- include('./partials/navigation.ejs') %>
+    <!--Picture-->
+    <div id="picture">
+        <header class="container d-flex justify-content-center align-items-center">
+            <img src="/img/oscar.jpg" alt="foto" class="" id="oscar-picture">
+        </header>
+    </div>
+    <!--Name-->
+    <div id="name-container" class="bg-dark text-center 4">
+        <h1 class="display-1 my-2 text-light fw-bold" id="oscar-title">Óscar Chávez</h1>
+    </div>
+    <!--About me-->
+    <div id="about-me-container" class="vh-50 container pt-2 text-center d-flex justify-content-center align-items-center">
+        <div id="about-me-container-text">
+            <h1 id="about-title" class="display-1 text-warning">About me:</h1>
+            <p id="about-text">
+                I love programming and learning. Luckily I
+                have friends who have been working in
+                the software industry for a long time, they
+                inspire me every day.
+                I like teamwork and helping my partners
+            </p>
+        </div>
+    </div>
+    <!--Skills-->
+    <div id="skills-container" class="vh-50 text-center bg-dark">
+        <div id="skills-container-2">
+            <h1 id="skills-title" class="display-1 text-warning">Skills</h1>
+            <p id="skills-text" class="text-light container">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti harum nobis accusantium asperiores placeat porro temporibus repudiandae autem omnis eligendi cum quae, nam est facilis. At saepe velit blanditiis sequi?
+            </p>
+        </div>
+        <!--Cards-->
+        <div class="d-flex justify-content-center align-items-center h-100"> <!--Cards container-->
+            <div class="row mb-5">
+                <!--Card1-->
+                <div class="card mx-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"> <%=three_skills[0]  %> </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <!--Card2-->
+                <div class="card mx-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"> <%=three_skills[1]  %> </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <!--Card3-->
+                <div class="card mx-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"> <%=three_skills[2]  %> </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

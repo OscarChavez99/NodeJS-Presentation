@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./partials/head.ejs') %>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/about.css">
+    <title> <%= title %> </title>
+</head>
+<body>
+    <!-- el '-' antes de include se usa para utilizar código -->
+    <%- include('./partials/navigation.ejs') %>
+
+    <main class="vh-50 container pt-2 text-center d-flex justify-content-center align-items-center">
+        <section>
+            <h1 id="about" class="display-1">About Us</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, sit vero provident explicabo in debitis accusamus porro voluptatem, exercitationem magnam harum optio officiis ipsum fugiat reiciendis itaque incidunt iste officia.
+            </p>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
