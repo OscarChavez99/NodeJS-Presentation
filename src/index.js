@@ -7,7 +7,6 @@ import indexRoutes from './routes/index.js'
 const app = express()
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-//console.log("Ruta: ", __dirname)
 
 app.set('views', join(__dirname, 'views'))
 app.set('view engine', 'ejs')

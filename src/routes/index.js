@@ -14,7 +14,10 @@ router.get('/skills', (req, res) => {
     const all_skills = skills[0];
     res.render('skills', {title: 'Skills', all_skills});
 });
+
 //contact
-router.get('/contact', (req, res) => res.render('contact', {title: 'Contact'}))
+router.get('/contact', (req, res) => {
+    res.render('contact', {title: 'Contact'});
+});
 
 export default router

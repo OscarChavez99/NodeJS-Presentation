@@ -13,14 +13,14 @@
     <!-- el '-' antes de include se usa para utilizar código -->
     <%- include('./partials/navigation.ejs') %>
 
-    <main class="vh-50 container pt-2 text-center d-flex justify-content-center align-items-center">
-        <section>
-            <h1 id="contact" class="display-1">Contact</h1>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, sit vero provident explicabo in debitis accusamus porro voluptatem, exercitationem magnam harum optio officiis ipsum fugiat reiciendis itaque incidunt iste officia.
-            </p>
-        </section>
-    </main>
+    <form action="/email" method="post">
+        <input type="text" id="name" name="name">
+        <input type="text" id="subject" name="subject">
+        <input type="text" id="message" name="message">
+        <input type="text" id="mail" name="mail">
+        
+        <input type="submit" value="Submit">
+    </form>
 
     <%- include('./partials/footer.ejs') %>
 </body>
